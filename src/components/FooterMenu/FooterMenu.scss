@@ -22,6 +22,8 @@ $bName: 'footer-menu';
 		font-weight: 300;
 		line-height: 1.25em;
 		padding: 0 0 5px;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 }

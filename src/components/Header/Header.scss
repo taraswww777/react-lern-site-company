@@ -46,7 +46,8 @@ $bName: 'header';
 				@include xy-cell(3);
 			}
 
-			&_email, &_serch {
+			&_email,
+			&_search {
 				align-items: center;
 
 				&::after {

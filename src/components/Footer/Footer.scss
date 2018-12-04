@@ -35,8 +35,14 @@ $bName: 'footer';
 			&_menu {
 				@include xy-cell(12);
 
+				display: block;
+				overflow: hidden;
+				text-overflow: ellipsis;
+
 				@include breakpoint(medium) {
-					@include xy-cell(4);
+					@include xy-cell(6);
+
+					display: flex;
 				}
 
 				@include breakpoint(large) {

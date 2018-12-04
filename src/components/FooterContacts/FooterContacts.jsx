@@ -10,11 +10,18 @@ const componentName = 'footer-contacts';
 function FooterContacts(props) {
 	return (
 		<div className={props.block()}>
-			<Mailto className={props.elem('email')} email={props.email}>{props.email}</Mailto>
-			<Mailto className={props.elem('phone')} tel={props.phone}>{props.phone}</Mailto>
 
-			<div className={props.elem('callback')}>
-				<CallbackLink/>
+			<div className={props.elem('item')}>
+				<Mailto className={props.elem('email')} email={props.email}>{props.email}</Mailto>
+			</div>
+			<div className={props.elem('item')}>
+				<Mailto className={props.elem('phone')} tel={props.phone}>{props.phone}</Mailto>
+			</div>
+
+			<div className={props.elem('item')}>
+				<div className={props.elem('callback')}>
+					<CallbackLink/>
+				</div>
 			</div>
 		</div>
 	);
