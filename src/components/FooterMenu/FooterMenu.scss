@@ -1,0 +1,27 @@
+@import "../../includes";
+
+$bName: 'footer-menu';
+
+.#{$bName} {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	flex-direction: column;
+	width: 100%;
+
+	&__item {
+	}
+	&__link {
+		@include hoverLink ($sped: 0.25s, $color: #1cb243);
+
+		text-decoration: underline;
+		display: inline-block;
+		width: 100%;
+		color: #444444;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 1.25em;
+		padding: 0 0 5px;
+	}
+
+}

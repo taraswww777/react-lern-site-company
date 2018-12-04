@@ -1,0 +1,15 @@
+@import "_config";
+@import "~foundation-sites/scss/foundation";
+
+@include foundation-normalize;
+* {
+	box-sizing: border-box;
+}
+
+#root {
+	width: 100%;
+}
+
+.app {
+
+}

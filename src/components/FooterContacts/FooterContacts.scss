@@ -1,0 +1,31 @@
+@import "../../includes";
+
+$bName: 'footer-contacts';
+
+.#{$bName} {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	width: 100%;
+
+	&__email {
+		@include hoverLink();
+
+		color: #1cb243;
+		font-size: 16px;
+		font-weight: 300;
+	}
+
+	&__phone {
+		@include hoverLink();
+
+		font-size: 18px;
+		color: #444444;
+		font-weight: 400;
+	}
+
+	&__callback {
+		color: #054e00;
+	}
+}
+

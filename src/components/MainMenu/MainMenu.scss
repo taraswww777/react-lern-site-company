@@ -1,0 +1,91 @@
+@import "../../includes";
+
+$bName: 'main-menu';
+
+.#{$bName} {
+	background: transparent;
+	justify-content: space-between;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+
+	@include breakpoint(medium) {
+		display: flex;
+	}
+
+	&__item {
+		display: flex;
+		flex: 1 0 auto;
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 1px;
+			background-color: #f5f5f5;
+			box-shadow: 1px 0 0 #ffffff;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			height: 100%;
+		}
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+	&__link {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: inline-block;
+		width: 100%;
+		color: #808790;
+		font-size: 18px;
+		font-weight: 300;
+		text-decoration: none;
+		text-align: center;
+		padding: 18px 20px;
+		cursor: pointer;
+
+		@include breakpoint(large) {
+			padding: 18px 40px;
+		}
+
+		&:hover {
+			animation: 0.25s hoverNavLink ease;
+			color: #ffffff;
+			background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 100%);
+		}
+
+		&--status {
+			&_active {
+				color: #ffffff;
+				background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 100%);
+			}
+		}
+	}
+
+}
+
+@keyframes hoverNavLink {
+	from {
+		color: #ffffff;
+		background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 0%);
+	}
+	25% {
+		background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 25%);
+	}
+	50% {
+		background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 50%);
+	}
+	75% {
+		background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 75%);
+	}
+	to {
+		color: #ffffff;
+		background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 100%);
+	}
+}

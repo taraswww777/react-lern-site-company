@@ -1,0 +1,20 @@
+@import "../../includes";
+
+$bName: 'email';
+
+.#{$bName} {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+
+	&__link {
+		color: #054e00;
+		font-weight: 300;
+	}
+
+	&__icon {
+		margin: 0 10px 0 0;
+	}
+}

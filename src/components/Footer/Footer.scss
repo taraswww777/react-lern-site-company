@@ -1,0 +1,63 @@
+@import "../../includes";
+
+$bName: 'footer';
+
+.#{$bName} {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 40px;
+	&__row {
+		@include xy-grid();
+	}
+	&__container {
+		@include xy-grid-container();
+
+		width: 100%;
+	}
+
+	&__ceil {
+		@include xy-cell(3);
+		display: flex;
+		&--type {
+			&_logo {
+				@include xy-cell(12);
+
+				@include breakpoint(medium) {
+					@include xy-cell(6);
+				}
+
+				@include breakpoint(large) {
+					@include xy-cell(4);
+				}
+			}
+			&_menu {
+				@include xy-cell(12);
+
+				@include breakpoint(medium) {
+					@include xy-cell(4);
+				}
+
+				@include breakpoint(large) {
+					@include xy-cell(6);
+				}
+			}
+			&_contacts {
+				@include xy-cell(12);
+
+				@include breakpoint(medium) {
+					@include xy-cell(12);
+				}
+
+				@include breakpoint(large) {
+					@include xy-cell(2);
+				}
+			}
+		}
+	}
+
+	&__menu-item {
+		flex: 1 0 auto;
+	}
+}

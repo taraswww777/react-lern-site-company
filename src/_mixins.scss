@@ -1,0 +1,15 @@
+@keyframes hoverLink {
+	from {
+		color: #444444;
+	}
+	to {
+		color: #1cb243;
+	}
+}
+
+@mixin hoverLink($sped:0.25s ,$color:#1cb243) {
+	&:hover {
+		animation: $sped hoverLink ease-in;
+		color: $color;
+	}
+}

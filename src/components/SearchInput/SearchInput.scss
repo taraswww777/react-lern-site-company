@@ -1,0 +1,16 @@
+@import "../../includes";
+
+$bName: 'search-input';
+
+.#{$bName} {
+	width: 100%;
+	padding: 8px 10px;
+	border: 1px solid #054e00;
+	position: relative;
+	color: #97a07d;
+	font-size: 14px;
+	background: transparent url(../../media/icon-loupe.svg) no-repeat;
+	background-position-y: center;
+	background-position-x: calc(100% - 10px);
+	background-size: 15px;
+}

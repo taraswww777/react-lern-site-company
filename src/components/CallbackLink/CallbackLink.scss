@@ -1,0 +1,16 @@
+@import "../../includes";
+
+$bName: 'callback-link';
+
+.#{$bName} {
+	@include hoverLink();
+
+	cursor: pointer;
+	display: inline-block;
+	color: #054e00;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 21px;
+	text-decoration: underline;
+}
+

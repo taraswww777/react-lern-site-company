@@ -1,0 +1,29 @@
+@import "../../includes";
+
+$bName: 'address-with-certificate';
+
+.#{$bName} {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	position: relative;
+	font-family: "Roboto Slab", serif;
+
+	&__icon {
+		position: absolute;
+		right: 100%;
+		top: 0;
+		margin: 0 5px 0 0;
+	}
+
+	&__address {
+		line-height: 1.2em;
+		font-size: 16px;
+		color: #054e00
+	}
+
+	&__certificate {
+		font-size: 14px;
+		color: #333333
+	}
+}
