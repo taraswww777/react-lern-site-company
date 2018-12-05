@@ -6,6 +6,13 @@ $bName: 'footer-logo';
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+	justify-content: center;
+	text-align: center;
+
+	@include breakpoint(medium) {
+		justify-content: flex-start;
+		text-align: left;
+	}
 
 	&__title {
 		color: #1cb243;
@@ -16,6 +23,10 @@ $bName: 'footer-logo';
 	}
 
 	&__logo {
-		margin-top: 30px;
+		margin-top: 10px;
+
+		@include breakpoint(medium) {
+			margin-top: 30px;
+		}
 	}
 }

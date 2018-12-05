@@ -24,8 +24,14 @@ $bName: 'footer';
 			&_logo {
 				@include xy-cell(12);
 
+				order: 3;
+				margin-top: 30px;
+
 				@include breakpoint(medium) {
 					@include xy-cell(6);
+
+					margin-top: 0;
+					order: 0;
 				}
 
 				@include breakpoint(large) {
@@ -35,7 +41,7 @@ $bName: 'footer';
 			&_menu {
 				@include xy-cell(12);
 
-				display: block;
+				display: flex;
 				overflow: hidden;
 				text-overflow: ellipsis;
 
@@ -48,22 +54,22 @@ $bName: 'footer';
 				@include breakpoint(large) {
 					@include xy-cell(6);
 				}
+
+				.#{$bName} {
+					&__menu-item {
+						width: 50%;
+					}
+				}
 			}
 			&_contacts {
-				@include xy-cell(12);
-
-				@include breakpoint(medium) {
-					@include xy-cell(12);
-				}
+				display: none;
 
 				@include breakpoint(large) {
 					@include xy-cell(2);
+					display: block;
 				}
 			}
 		}
 	}
 
-	&__menu-item {
-		flex: 1 0 auto;
-	}
 }
