@@ -1,0 +1,63 @@
+@import "../../../includes";
+
+$bName: 'branch-menu';
+
+.#{$bName} {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		position: relative;
+		background: #ecffb6;
+		margin: 2px 3px;
+
+		&:nth-child(2n) {
+			background: #39a731;
+			.#{$bName} {
+				&__link {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+
+	&__link {
+		width: 100%;
+		padding: 10px;
+		color: #333333;
+		text-decoration: none;
+		font-size: 14px;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+}
+
+@keyframes hoverNavLink {
+	from {
+		color: #ffffff;
+		background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 0%);
+	}
+	25% {
+		background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 25%);
+	}
+	50% {
+		background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 50%);
+	}
+	75% {
+		background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 75%);
+	}
+	to {
+		color: #ffffff;
+		background: #054e00 linear-gradient(to top, #10942e 0%, #b5df39 100%);
+	}
+}

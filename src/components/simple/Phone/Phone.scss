@@ -1,0 +1,13 @@
+@import "../../../includes";
+
+$bName: 'phone';
+
+.#{$bName} {
+	@include hoverLink($speed: 1s, $colorFinish: #333);
+
+	display: inline-block;
+	color: #333333;
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: 1px transparent solid;
+}

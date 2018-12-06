@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="11"
+     viewBox="0 0 20 11">
+    <defs>
+        <path id="jjzna" d="M304.99 68.483L295 77.99l-9.99-9.507"/>
+        <clipPath id="jjznb">
+            <use fill="#fff" xlink:href="#jjzna"/>
+        </clipPath>
+    </defs>
+    <g>
+        <g transform="translate(-285 -68)">
+            <use fill="#fff" fill-opacity="0" stroke="#231f20" stroke-miterlimit="50" stroke-width="2"
+                 clip-path="url(&quot;#jjznb&quot;)" xlink:href="#jjzna"/>
+        </g>
+    </g>
+</svg>

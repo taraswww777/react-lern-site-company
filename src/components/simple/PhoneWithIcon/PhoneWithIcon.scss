@@ -1,0 +1,25 @@
+@import "../../../includes";
+
+$bName: 'phone-with-icon';
+
+.#{$bName} {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	font-family: "Roboto Slab", serif;
+	text-align: right;
+
+	&__icon {
+		margin: 0 10px 0 0;
+		width: 20px;
+		height: 20px;
+	}
+
+	&__number {
+		display: inline-block;
+		color: #333333;
+		font-size: 20px;
+		font-weight: 400;
+		text-decoration: none;
+	}
+}

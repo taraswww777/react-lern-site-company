@@ -1,15 +1,36 @@
-@keyframes hoverLink {
-	from {
-		color: #444444;
+@function clearStr($str) {
+	$removeList: '#', ' ', '-', '.', ',', "'", '"', '`', '+', '/', '*';
+
+	@each $removeItem in $removeList {
+		@while (str-index($str, $removeItem) != null) {
+			$index: str-index($str, $removeItem);
+			$str: "#{str-slice($str, 0, $index - 1)}#{str-slice($str, $index + 1)}";
+		}
 	}
-	to {
-		color: #1cb243;
-	}
+
+	@return $str;
 }
 
-@mixin hoverLink($sped:0.25s ,$color:#1cb243) {
+@mixin hoverLink($speed:0.25s ,$colorStart:#333,$colorFinish:#1cb243) {
+
+	$keyframesName: 'hoverLink' + clearStr('_'+ $speed + '_'+$colorStart + '_'+$colorFinish);
+
+	@keyframes #{$keyframesName} {
+		from {
+			color: $colorStart;
+		}
+		to {
+			color: $colorFinish;
+		}
+	}
+
+	border-bottom: 1px transparent solid;
+	text-decoration: none;
+
 	&:hover {
-		animation: $sped hoverLink ease-in;
-		color: $color;
+		transition: $speed ease;
+		animation: $speed $keyframesName ease-in;
+		color: $colorFinish;
+		border-bottom-color: $colorFinish;
 	}
 }

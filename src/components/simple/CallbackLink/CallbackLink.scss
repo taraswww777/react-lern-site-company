@@ -1,4 +1,4 @@
-@import "../../includes";
+@import "../../../includes";
 
 $bName: 'callback-link';
 
@@ -11,6 +11,6 @@ $bName: 'callback-link';
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 21px;
-	text-decoration: underline;
+	border-bottom-color: #054e00;
 }
 

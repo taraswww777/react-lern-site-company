@@ -12,7 +12,7 @@ $bName: 'footer-menu';
 	&__item {
 	}
 	&__link {
-		@include hoverLink ($sped: 0.25s, $color: #1cb243);
+		@include hoverLink ($speed: 0.25s, $colorStart: #444444, $colorFinish: #1cb243);
 
 		text-decoration: underline;
 		display: inline-block;

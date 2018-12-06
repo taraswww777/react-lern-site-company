@@ -2,7 +2,7 @@ import React from 'react';
 import Mailto from 'react-protected-mailto';
 import './FooterContacts.scss';
 import bem from "../../lib/bem";
-import CallbackLink from "../CallbackLink/CallbackLink";
+import CallbackLink from "../simple/CallbackLink/CallbackLink";
 
 
 const componentName = 'footer-contacts';

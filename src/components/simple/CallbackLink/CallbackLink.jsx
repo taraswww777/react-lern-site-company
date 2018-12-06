@@ -1,6 +1,6 @@
 import React from 'react';
 import './CallbackLink.scss';
-import bem from "../../lib/bem";
+import bem from "../../../lib/bem";
 
 
 const componentName = 'callback-link';
