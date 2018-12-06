@@ -1,0 +1,19 @@
+@import '../../includes';
+
+$bName: 'page-index';
+
+.#{$bName} {
+	&__container {
+		@include xy-grid-container()
+	}
+	&__row {
+		@include xy-grid()
+	}
+	&__ceil {
+		@include xy-cell(12)
+	}
+
+	&__img{
+		max-width: 100%;
+	}
+}

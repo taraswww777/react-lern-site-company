@@ -2,16 +2,12 @@
 	"name": "wingi",
 	"version": "0.1.0",
 	"private": true,
-	"dependencies": {
-		"react": "^16.6.3",
-		"react-dom": "^16.6.3",
-		"react-scripts": "2.1.1"
-	},
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"server": "nodemon --exec babel-node server"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -22,12 +18,38 @@
 		"not ie <= 11",
 		"not op_mini all"
 	],
+	"dependencies": {
+		"axios": "0.18.0",
+		"react": "16.6.3",
+		"react-dom": "16.6.3",
+		"react-scripts": "2.1.1"
+	},
 	"devDependencies": {
-		"foundation-sites": "^6.5.1",
-		"lodash": "^4.17.11",
-		"node-sass": "^4.10.0",
-		"react-protected-mailto": "^1.0.3",
-		"react-router": "^4.3.1",
-		"react-router-dom": "^4.3.1"
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"body-parser": "1.18.3",
+		"express": "4.16.4",
+		"foundation-sites": "6.5.1",
+		"fs": "^0.0.1-security",
+		"history": "4.7.2",
+		"lodash": "4.17.11",
+		"morgan": "1.9.1",
+		"node-sass": "4.10.0",
+		"nodemon": "1.18.7",
+		"path": "0.12.7",
+		"react-protected-mailto": "1.0.3",
+		"react-redux": "6.0.0",
+		"react-router-dom": "4.3.1",
+		"react-router-redux": "4.0.8",
+		"redux": "4.0.1",
+		"redux-devtools-extension": "2.13.7",
+		"redux-thunk": "2.3.0"
+	},
+	"nodemonConfig": {
+		"ignore": [
+			"data/*",
+			"node_modules/*",
+			"public/*"
+		]
 	}
 }
