@@ -1,0 +1,24 @@
+@import "../../../includes";
+
+$bName: 'pre-loader';
+
+.#{$bName} {
+	text-decoration: none;
+	color: #000;
+	background: url(../../../media/logo.svg) no-repeat center center;
+	transition: infiniti;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	animation: main-rotate 2s infinite linear;
+
+	@keyframes main-rotate {
+		from{
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(360deg);
+		}
+	}
+}

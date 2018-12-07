@@ -18,7 +18,6 @@ const componentName = 'header';
 
 const menuList = [
 	{title: 'Главная', to: '/'},
-	{title: 'О компании', to: '/about'},
 	{title: 'Услуги', to: '/services'},
 	{title: 'Статьи', to: '/articles'},
 	{title: 'Новости', to: '/news'},

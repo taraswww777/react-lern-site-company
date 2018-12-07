@@ -5,7 +5,6 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import {Route, Switch} from "react-router";
 import PageIndex from "./pages/PageIndex/PageIndex";
-import PageAbout from "./pages/AboutPage/PageAbout";
 import PageServices from "./pages/PageServices/PageServices";
 import PageArticles from "./pages/PageArticles/PageArticles";
 import PageNews from "./pages/PageNews/PageNews";
@@ -26,7 +25,6 @@ ReactDOM.render(
 			<App>
 				<Switch>
 					<Route path={'/'} exact={true} component={PageIndex}/>
-					<Route path={'/about'} component={PageAbout}/>
 					<Route path={'/services'} component={PageServices}/>
 					<Route path={'/articles'} component={PageArticles}/>
 					<Route path={'/news'} component={PageNews}/>

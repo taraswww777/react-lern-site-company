@@ -1,0 +1,33 @@
+@import "../../../includes";
+
+$bName: 'services-list';
+
+.#{$bName} {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	position: relative;
+	font-family: "Roboto Slab", serif;
+
+	&__list {
+		list-style: none;
+		padding-left: 30px;
+	}
+	&__item {
+		position: relative;
+		margin-bottom: 10px;
+
+		&::before {
+			content: '';
+			background: #06892c;
+			border-radius: 50%;
+			width: 8px;
+			height: 8px;
+			display: inline-block;
+			position: absolute;
+			left: -15px;
+			top: 0;
+			transform: translateY(50%);
+		}
+	}
+}

@@ -4,6 +4,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
 import {getPageBySlug} from "./parts/pages";
+import {getAllServices} from "./parts/services";
 
 const app = express();
 
@@ -29,6 +30,11 @@ app.get('/', (req, response) => {
 
 app.get('/api/page/getBySlug/:slug', (req, response) => {
 	response.send(getPageBySlug(_.get(req,'params.slug')));
+	response.end();
+});
+
+app.get('/api/services/getAll', (req, response) => {
+	response.send(getAllServices());
 	response.end();
 });
 

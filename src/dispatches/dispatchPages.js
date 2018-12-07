@@ -2,7 +2,7 @@ import axios from "axios";
 import {URL_API} from "../config";
 import {PAGES_ACTION_SET_PAGE_DATA} from "../reducers/ReducerPages";
 
-function getPageBySlug(dispatch) {
+function loadPageBySlug(dispatch) {
 	return (pageSlug) => {
 		if (!pageSlug) {
 			console.error('empty: ', pageSlug);
@@ -13,7 +13,6 @@ function getPageBySlug(dispatch) {
 
 		return axios.get(url)
 			.then(response => {
-				console.log('response.data:',response.data);
 				dispatch({type: PAGES_ACTION_SET_PAGE_DATA, payload: response.data})
 			})
 			.catch(reason => {
@@ -24,6 +23,6 @@ function getPageBySlug(dispatch) {
 
 export default function dispatchPages(dispatch) {
 	return {
-		getPageBySlug: getPageBySlug(dispatch),
+		loadPageBySlug: loadPageBySlug(dispatch),
 	};
 }

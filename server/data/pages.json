@@ -21,30 +21,28 @@
 	{
 		"_id": "5c093ff4c6f8e82efa13f54c",
 		"guid": "0777d5cb-414b-491f-bcef-89042da76fb9",
+		"slug":"about",
 		"isActive": true,
 		"registered": "Wed Jan 01 2014 00:00:00 GMT+0000",
-		"title": "PatelBerg",
-		"previewText": "Cillum duis aliquip nostrud anim ipsum magna tempor commodo fugiat cillum magna eu. Dolor sint dolore Lorem irure proident fugiat voluptate do commodo et consequat. Deserunt laborum aliqua cupidatat cillum laboris tempor enim officia sit qui. Et irure anim sit anim consequat esse magna laborum quis nostrud. Anim labore voluptate nostrud nostrud. Est et nisi sint veniam culpa officia minim labore ex ipsum non cupidatat pariatur nulla.",
-		"previewImage": "http://placehold.it/32x32",
-		"detailText": "Eiusmod irure veniam in pariatur Lorem eu irure elit consequat ad ea amet do. Pariatur ea exercitation culpa magna. Ea nulla incididunt irure labore esse et ex velit amet minim. Ea nulla pariatur tempor aliquip. Consequat id sunt irure veniam eu anim tempor velit voluptate sint et occaecat fugiat.\n\nQuis ad sunt ad deserunt sint eiusmod ut consequat sunt. Do aliqua enim fugiat Lorem voluptate proident proident ipsum culpa est nostrud ut. Lorem adipisicing Lorem consequat labore quis. Deserunt fugiat consectetur pariatur nisi. Proident ullamco nisi eiusmod ad. Ullamco id deserunt deserunt pariatur duis enim ullamco.\n\nMinim aliquip labore reprehenderit occaecat. Id in nostrud amet fugiat enim excepteur consectetur quis eu. Sit proident tempor commodo aliquip voluptate irure occaecat Lorem mollit ea commodo sit ex. Occaecat ex irure eiusmod consectetur id ea veniam enim ea Lorem nisi ea cupidatat. Cillum veniam eiusmod incididunt exercitation. Duis eu est duis dolor ullamco nostrud.",
-		"detailImage": "http://placehold.it/1000x600",
-		"tags": [
-			"do",
-			"consequat",
-			"et",
-			"est",
-			"aute"
-		]
+		"title": "О компании",
+		"previewText": "Общероссийский таможенный представитель ООО «СЭЗ-Сервис» успешно работает на российском рынке таможенных услуг с 2006 года (Свидетельство о включении в реестр таможенных брокеров № 0082/04 от 22 апреля 2014 г.)",
+		"previewImage": "",
+		"detailText": "Общероссийский таможенный представитель ООО «СЭЗ-Сервис» успешно работает на российском рынке таможенных услуг с 2006 года (Свидетельство о включении в реестр таможенных брокеров № 0082/04 от 22 апреля 2014 г.)",
+		"detailImage": "",
+		"tags": []
 	},
 	{
 		"_id": "5c093ff414d20d1fd37e463d",
 		"guid": "badaf48c-a6ca-4f11-a845-ff24bbd6761f",
+		"slug":"services",
 		"isActive": true,
 		"registered": "Wed Jan 01 2014 00:00:00 GMT+0000",
-		"title": "RojasHogan",
+		"title": "Услуги таможенного бизнеса",
 		"previewText": "Eu laboris esse ut duis pariatur aliqua consectetur. Consectetur ut nostrud consequat consequat tempor minim consectetur ad cillum ullamco consequat non dolore excepteur. Nisi veniam occaecat et culpa nulla nostrud nisi irure velit commodo enim esse amet fugiat. Ex ullamco veniam labore quis occaecat sint. Aute voluptate sunt culpa irure non cupidatat pariatur do laborum nisi commodo consectetur. Aliquip commodo et laborum nostrud aliquip et.",
 		"previewImage": "http://placehold.it/32x32",
-		"detailText": "Cupidatat ipsum dolor nisi enim. Elit consequat do irure deserunt consequat ex. Cupidatat nostrud incididunt duis sunt ex dolor enim ut in aute dolor pariatur. Laborum fugiat proident adipisicing nisi nisi occaecat elit.\n\nEnim Lorem sunt ipsum deserunt voluptate commodo. Commodo cupidatat et mollit sunt ex voluptate dolor excepteur consectetur pariatur. Tempor nulla occaecat commodo enim et proident amet excepteur amet amet voluptate laboris ad. Nostrud amet commodo occaecat aliqua.\n\nEiusmod sint sit pariatur culpa mollit dolore. Qui fugiat ex voluptate dolore proident exercitation. Tempor anim veniam est tempor eiusmod sint nisi aute anim quis consequat quis. Ullamco labore adipisicing et ea officia deserunt ad enim pariatur. Aliquip eiusmod irure elit sit labore eu ipsum adipisicing do eiusmod do aute dolor ea. Esse Lorem nisi sint non. Dolor quis eiusmod quis officia amet laboris adipisicing ea.",
+		"detailText": "<p><img class=\"right\" src=\"/media/services.png\"/> Владелец любого бизнеса рано или поздно задумывается над тем, чтобы расширить свое дело не только на территории всей страны, но и развиваться за границей. А выход на международный рынок – это достаточно сложная процедура, требующая, кроме стандартных документов и правил оформления грузов при перевозке, дополнительные временные и денежные затраты. Оформление и заполнение транспортной документации, счет-фактур, составление контрактов, отгрузочных листов, получение пожарного сертификата отнимет у вас массу времени, а если вы впервые с этим сталкиваетесь — не исключена ошибка, и, как следствие, задержки в поставке товаров.</p><p>Если вы решились выйти на международный уровень, то такая организация-посредник, как таможенный брокер, вам просто необходима. Наша компания имеет большой опыт в выполнении всех необходимых процедур и оформлении пакета документов, поэтому лучшего брокера вам не найти.</p>",
+
+
 		"detailImage": "http://placehold.it/1000x600",
 		"tags": [
 			"quis",

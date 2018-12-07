@@ -1,0 +1,49 @@
+@import "../../../includes";
+
+$bName: 'bread-crumbs';
+
+.#{$bName} {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	position: relative;
+	font-family: "Roboto Slab", serif;
+
+	&__item {
+		position: relative;
+		margin: 0 5px;
+		&::after {
+			content: '/';
+			color: #909090;
+			font-size: 16px;
+			padding-left: 10px;
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			&::after {
+				display: none;
+			}
+			.#{$bName} {
+				&__link {
+					pointer-events: none;
+					color: #434343;
+				}
+			}
+		}
+	}
+
+	&__link {
+		color: #909090;
+		font-size: 14px;
+		text-decoration: none;
+
+		&:hover{
+			cursor: pointer;
+			transition: 0.5s linear;
+			color: #434343;
+		}
+	}
+}

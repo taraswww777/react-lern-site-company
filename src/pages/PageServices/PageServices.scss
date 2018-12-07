@@ -3,5 +3,10 @@
 $bName: 'page-services';
 
 .#{$bName} {
+	@include gridBase;
 
+	&__inner-html{
+	@include content;
+
+	}
 }

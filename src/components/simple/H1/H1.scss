@@ -1,0 +1,13 @@
+@import "../../../includes";
+
+$bName: 'h1';
+
+.#{$bName} {
+	line-height: 1;
+	color: #06892c;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	margin: 0 0 30px;
+}

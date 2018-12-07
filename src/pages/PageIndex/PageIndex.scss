@@ -4,7 +4,8 @@ $bName: 'page-index';
 
 .#{$bName} {
 	&__container {
-		@include xy-grid-container()
+		@include xy-grid-container();
+		background: #ffffff;
 	}
 	&__row {
 		@include xy-grid()

@@ -6,7 +6,7 @@ import emailIcon from "../../../media/icon-email.svg";
 
 const componentName = 'email-with-icon';
 
-function Email(props) {
+function EmailWithIcon(props) {
 	return (
 		<div className={props.block()}>
 			<img src={emailIcon} className={props.elem('icon')} alt={'email'}/>
@@ -16,4 +16,4 @@ function Email(props) {
 	);
 }
 
-export default bem(Email, componentName);
+export default bem(EmailWithIcon, componentName);

@@ -34,3 +34,40 @@
 		border-bottom-color: $colorFinish;
 	}
 }
+
+@mixin gridBase() {
+	&__container {
+		@include xy-grid_container();
+
+		&--bg {
+			&_white {
+				background: #ffffff;
+			}
+		}
+	}
+	&__row {
+		@include xy-grid();
+	}
+	&__ceil-middle {
+		@include xy-cell(12);
+
+		@include breakpoint(medium) {
+			@include xy-cell(10);
+			margin: 0 auto;
+		}
+	}
+	&__ceil {
+		@include xy-cell(12);
+	}
+}
+
+@mixin content() {
+	img {
+		max-width: 100%;
+
+		&.right {
+			float: right;
+			margin: 0 0 10px 10px;
+		}
+	}
+}

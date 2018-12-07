@@ -4,6 +4,8 @@ import bem from "../../lib/bem";
 import './PageIndex.scss';
 import {connect} from "react-redux";
 import dispatchPages from "../../dispatches/dispatchPages";
+import PageTitle from "../../components/simple/H1/H1";
+import PreLoader from "../../components/simple/PreLoader/PreLoader";
 
 const componentName = 'page-index';
 
@@ -16,14 +18,13 @@ class PageIndex extends React.Component {
 			<div className={this.props.elem('container')}>
 				<div className={this.props.elem('row')}>
 					<div className={this.props.elem('ceil')}>
-						{pageData&& <>
-						<h1 className={this.props.elem('title')}>{pageData.title}</h1>
-							{pageData.detailImage &&
-							<img
-								className={this.props.elem('img')}
-								src={pageData.detailImage} alt={pageData.title}/>}
+						{pageData? <>
+						<PageTitle className={this.props.elem('title')}>{pageData.title}</PageTitle>
+
+							{pageData.detailImage && <img className={this.props.elem('img')} src={pageData.detailImage} alt={pageData.title}/>}
+
 							<div className={this.props.elem('detail')}>{pageData.detailText}</div>
-						</>}
+						</>: <PreLoader/>}
 					</div>
 				</div>
 			</div>
@@ -31,7 +32,7 @@ class PageIndex extends React.Component {
 	}
 
 	componentDidMount() {
-		this.props.getPageBySlug('index')
+		this.props.loadPageBySlug('about')
 	}
 }
 
